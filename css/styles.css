@@ -1,0 +1,419 @@
+/*------------------COLORS---------------------- */
+/* --what used for - name in a layout */
+
+:root {
+  --primary-brand-iris: #4d5ae5;
+
+  --btn-active-ocean: #404bbf;
+
+  --dark-headings-navy: #2e2f42;
+
+  --body-text-slate: #434455;
+
+  --white: #ffffff;
+
+  --light-background-cloud: #f4f4fd;
+
+  --accent-color-background-cornflower: #e7e9fc;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--body-text-slate);
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section.no-top-padding {
+  padding-top: 0;
+}
+.section.portfolio {
+  padding-top: 96px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* image no gap */
+.no-gap {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1158px;
+}
+.flex-container {
+  display: flex;
+}
+
+/*------------------HEADER---------------------- */
+
+.page-header {
+  border-bottom: 1px solid var(--accent-color-background-cornflower);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-iris);
+
+  padding-left: 15px;
+  padding-right: 76px;
+}
+
+.logo-dark {
+  color: var(--dark-headings-navy);
+}
+
+.navigation {
+  display: flex;
+}
+.navigation .list {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark-headings-navy);
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--btn-active-ocean);
+}
+
+.address {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.address .list {
+  display: flex;
+  gap: 40px;
+}
+
+.address-email {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--body-text-slate);
+}
+.address-email:hover,
+.address-email:focus {
+  color: var(--btn-active-ocean);
+}
+.address-email:current {
+  color: var(--btn-active-ocean);
+}
+
+.address-phone-nr {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--body-text-slate);
+}
+.address-phone-nr:hover,
+.address-phone-nr:focus {
+  color: var(--btn-active-ocean);
+}
+
+/*------------------INDEX MAIN---------------------- */
+
+/*---------------------HERO------------------------- */
+
+.hero {
+  background-color: var(--dark-headings-navy);
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.hero-header {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--white);
+
+  max-width: 494px;
+  margin-top: 0;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-button {
+  font-family: inherit;
+  background-color: var(--primary-brand-iris);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  min-width: 169px;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--btn-active-ocean);
+  border: none;
+}
+
+/*------------------FEATURES---------------------- */
+
+.features {
+  display: flex;
+}
+.features li {
+  width: 269px;
+  display: inline-block;
+}
+.features-list {
+  display: flex;
+  gap: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.features-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-headings-navy);
+
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.feautures-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*----------------WHAT WE DO SECTION------------------- */
+
+.what-we-do {
+}
+
+.what-we-do .list {
+  display: flex;
+  gap: 24px;
+}
+
+.what-we-do-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-headings-navy);
+
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
+/*-----------------OUR TEAM SECTION--------------------- */
+
+.team {
+  background-color: var(--light-background-cloud);
+}
+
+.team .list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-card {
+  background-color: var(--white);
+  width: calc((100% - 102px) / 4);
+}
+
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-headings-navy);
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
+.team-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-headings-navy);
+
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-card-wrap {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+/*------------------FOOTER---------------------- */
+
+.footer {
+  background-color: var(--dark-headings-navy);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-iris);
+}
+
+.logo-bright {
+  color: var(--light-background-cloud);
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color-background-cornflower);
+
+  max-width: 264px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.footer .container {
+  padding-left: 15px;
+}
+
+/*------------------PORTFOLIO MAIN---------------------- */
+
+.portfolio {
+}
+
+/*------------------FILTER BUTTONS---------------------- */
+
+.filter {
+}
+
+.filter-list {
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.button-filter {
+  font-family: inherit;
+  background-color: var(--light-background-cloud);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-iris);
+  border: 1px solid var(--accent-color-background-cornflower);
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--btn-active-ocean);
+  color: var(--white);
+}
+
+/*-----------------PORTFOLIO CARDS--------------------- */
+
+.portfolio .list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.portfolio-card {
+}
+.portfolio-card-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-headings-navy);
+
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.portfolio-card-wrap {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+
+  border-right: 1px solid var(--accent-color-background-cornflower);
+  border-bottom: 1px solid var(--accent-color-background-cornflower);
+  border-left: 1px solid var(--accent-color-background-cornflower);
+}
+.portfolio-card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-text-slate);
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
