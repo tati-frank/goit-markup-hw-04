@@ -81,6 +81,8 @@ body {
   border-bottom: 1px solid var(--accent-color-background-cornflower);
   padding-top: 24px;
   padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -337,6 +339,10 @@ body {
   justify-content: center;
   align-content: center;
 }
+.team-social-media-item:hover,
+.team-social-media-item:focus {
+  background-color: var(--btn-active-ocean);
+}
 
 .team-social-media-link {
   width: 100%;
@@ -375,9 +381,13 @@ body {
   height: 88px;
   border: 1px solid var(--logo-light-slate);
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients-logo {
+  fill: var(--logo-light-slate);
 }
 /*------------------FOOTER---------------------- */
 
@@ -450,6 +460,9 @@ body {
 .button-filter:focus {
   background-color: var(--btn-active-ocean);
   color: var(--white);
+  border: 1px solid var(--btn-active-ocean);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*-----------------PORTFOLIO CARDS--------------------- */
@@ -481,7 +494,18 @@ body {
   border-right: 1px solid var(--accent-color-background-cornflower);
   border-bottom: 1px solid var(--accent-color-background-cornflower);
   border-left: 1px solid var(--accent-color-background-cornflower);
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+.portfolio-card-wrap:hover,
+.portfolio-card-wrap:focus {
+  border-right: 0, 5px solid var(--light-background-cloud);
+  border-bottom: 0, 5px solid var(--light-background-cloud);
+  border-left: 0, 5px solid var(--light-background-cloud);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-card-text {
   font-size: 16px;
   line-height: 1.5;
