@@ -71,6 +71,8 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   width: 1158px;
 }
 .flex-container {
@@ -96,8 +98,7 @@ body {
   text-transform: uppercase;
   color: var(--primary-brand-iris);
 
-  padding-left: 15px;
-  padding-right: 76px;
+  margin-right: 76px;
 }
 
 .logo-dark {
@@ -215,7 +216,6 @@ body {
 /*------------------ADVANTAGES---------------------- */
 
 .advantages {
-  display: flex;
 }
 .advantages li {
   width: 269px;
@@ -224,8 +224,6 @@ body {
 .advantages-list {
   display: flex;
   gap: 24px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .advantages-container {
@@ -445,11 +443,10 @@ body {
 }
 
 .footer .container {
-  padding-left: 15px;
   display: flex;
 }
 .social-media-footer {
-  padding-left: 120px;
+  margin-left: 120px;
 }
 .social-media-footer-header {
   font-weight: 500;
@@ -538,6 +535,7 @@ body {
   column-gap: 24px;
 }
 .portfolio-card {
+  width: calc((100% - 2 * 24px) / 3);
 }
 .portfolio-card-header {
   font-weight: 500;
