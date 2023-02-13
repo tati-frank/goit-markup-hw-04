@@ -17,6 +17,8 @@
   --accent-color-background-cornflower: #e7e9fc;
 
   --logo-light-slate: #8e8f99;
+
+  --footer-icons-hover-green: #31d0aa;
 }
 
 body {
@@ -225,6 +227,20 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.advantages-container {
+  width: 264px;
+  height: 112px;
+  background-color: var(--light-background-cloud);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.advantages-icon {
+}
 .advantages-item {
   font-weight: 500;
   font-size: 20px;
@@ -375,8 +391,9 @@ body {
   display: flex;
   gap: 24px;
 }
-
-.clients-item {
+.clients-link {
+  width: 100%;
+  height: 100%;
   width: 168px;
   height: 88px;
   border: 1px solid var(--logo-light-slate);
@@ -384,11 +401,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--logo-light-slate);
+}
+.clients-logo {
+  fill: currentColor;
+}
+.clients-link:is(:hover, :focus) {
+  border-color: var(--btn-active-ocean);
+  fill: var(--btn-active-ocean);
 }
 
-.clients-logo {
-  fill: var(--logo-light-slate);
-}
 /*------------------FOOTER---------------------- */
 
 .footer {
@@ -424,6 +446,48 @@ body {
 
 .footer .container {
   padding-left: 15px;
+  display: flex;
+}
+.social-media-footer {
+  padding-left: 120px;
+}
+.social-media-footer-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-media-list-footer {
+  display: flex;
+  gap: 16px;
+}
+.social-media-footer-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socail-media-footer-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socail-media-footer-item:hover,
+.socail-media-footer-item:focus {
+  background-color: var(--footer-icons-hover-green);
+}
+.social-media-footer-icon {
+  display: flex;
+  fill: var(--light-background-cloud);
 }
 
 /*------------------PORTFOLIO MAIN---------------------- */
