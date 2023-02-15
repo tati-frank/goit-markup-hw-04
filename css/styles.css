@@ -174,10 +174,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1158px;
   flex-grow: 1;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-header {
   font-weight: 700;
@@ -344,27 +347,20 @@ body {
   gap: 24px;
 }
 
-.team-social-media-item {
+.team-social-media-link {
   background-color: var(--primary-brand-iris);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-content: center;
-}
-.team-social-media-item:hover,
-.team-social-media-item:focus {
-  background-color: var(--btn-active-ocean);
-}
-
-.team-social-media-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
+.team-social-media-link:hover,
+.team-social-media-link:focus {
+  background-color: var(--btn-active-ocean);
+}
+/* 
 
 .team-social-media-icon {
 }
@@ -402,7 +398,7 @@ body {
   color: var(--logo-light-slate);
 }
 .clients-logo {
-  fill: currentColor;
+  color: currentColor;
 }
 .clients-link:is(:hover, :focus) {
   border-color: var(--btn-active-ocean);
@@ -469,7 +465,7 @@ body {
   align-items: center;
 }
 
-.socail-media-footer-item {
+.social-media-footer-link {
   background-color: rgba(255, 255, 255, 0.1);
   width: 40px;
   height: 40px;
@@ -478,10 +474,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-.socail-media-footer-item:hover,
-.socail-media-footer-item:focus {
+.social-media-footer-link:hover,
+.social-media-footer-link:focus {
   background-color: var(--footer-icons-hover-green);
 }
+
 .social-media-footer-icon {
   display: flex;
   fill: var(--light-background-cloud);
@@ -556,14 +553,15 @@ body {
   border-right: 1px solid var(--accent-color-background-cornflower);
   border-bottom: 1px solid var(--accent-color-background-cornflower);
   border-left: 1px solid var(--accent-color-background-cornflower);
+}
+
+.portfolio-card-link {
+  display: block;
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.portfolio-card-wrap:hover,
-.portfolio-card-wrap:focus {
-  border-right: 0, 5px solid var(--light-background-cloud);
-  border-bottom: 0, 5px solid var(--light-background-cloud);
-  border-left: 0, 5px solid var(--light-background-cloud);
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
